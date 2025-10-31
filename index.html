@@ -8,44 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
-    <style>
-        .hero-section {
-            min-height: 100vh;
-            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-                url('https://www.state.gov/wp-content/uploads/2019/04/Japan-2107x1406.jpg') center/cover no-repeat;
-        }
-
-        .gallery-item {
-            overflow: hidden;
-            border-radius: 8px;
-            position: relative;
-            height: 300px;
-        }
-
-        .gallery-item img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.3s ease;
-        }
-
-        .gallery-item:hover img {
-            transform: scale(1.1);
-        }
-
-        .region-card:hover {
-            transform: translateY(-5px);
-            transition: transform 0.3s ease;
-        }
-
-        .food-card {
-            transition: all 0.3s ease;
-        }
-
-        .food-card:hover {
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        }
-    </style>
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 
 <body>
@@ -103,8 +66,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto text-center mb-5">
-                    <h2 class="display-4 fw-bold text-primary mb-4">About Japan</h2>
-                    <p class="lead text-muted">Japan is an island nation in East Asia known for its rich history,
+                    <h2 class="display-4 fw-bold text-primary mb-4"
+                        style="text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.9);">About Japan</h2>
+                    <p class="lead text-dark fw-semibold" style="text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.9);">
+                        Japan is an island nation in East Asia known for its rich history,
                         vibrant culture, cutting-edge technology, and stunning natural landscapes. From the bustling
                         streets of Tokyo to the serene temples of Kyoto, Japan offers a unique blend of the old and the
                         new.</p>
@@ -188,7 +153,137 @@
         </div>
     </section>
 
+    <!-- Regions & Cities Section -->
+    <section id="regions" class="py-5 bg-white">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-4 fw-bold text-primary mb-3">Regions & Cities</h2>
+                <p class="lead text-muted">Explore Japan's diverse regions, each with unique character and attractions
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Tokyo -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card region-card h-100 shadow-sm border-0">
+                        <div class="card-body p-4">
+                            <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=800&q=80"
+                                alt="Tokyo cityscape" class="region-image">
+
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-buildings text-primary fs-2 me-3"></i>
+                                <h4 class="fw-bold mb-0">Tokyo</h4>
+                            </div>
+                            <span class="badge bg-primary mb-3">Kanto Region</span>
+                            <p class="text-muted">Japan's bustling capital, a fusion of ultra-modern and traditional.
+                                Experience neon-lit streets, world-class dining, historic temples, and cutting-edge
+                                technology.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Shibuya Crossing</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Senso-ji Temple</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Tokyo Skytree</li>
+                            </ul>
+
+                            <!-- Tokyo Map -->
+                            <div class="map-container">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d207241.42019502868!2d139.55473195!3d35.6828387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x605d1b87f02e57e7%3A0x2e01618b22571b89!2sTokyo%2C%20Japan!5e0!3m2!1sen!2s!4v1635000000000!5m2!1sen!2s"
+                                    allowfullscreen="" loading="lazy">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kyoto -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card region-card h-100 shadow-sm border-0">
+                        <div class="card-body p-4">
+                            <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=800&q=80"
+                                alt="Kyoto temple" class="region-image">
+
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-tree text-success fs-2 me-3"></i>
+                                <h4 class="fw-bold mb-0">Kyoto</h4>
+                            </div>
+                            <span class="badge bg-success mb-3">Kansai Region</span>
+                            <p class="text-muted">Ancient capital with over 2,000 temples and shrines. Walk through
+                                bamboo groves, traditional geisha districts, and stunning zen gardens.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Fushimi Inari Shrine</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Arashiyama Bamboo</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Kinkaku-ji Temple</li>
+                            </ul>
+
+                            <!-- Kyoto Map -->
+                            <div class="map-container">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104603.52466745283!2d135.66828705!3d35.0116363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600108ae918b02ef%3A0xb61a446a7678d7f4!2sKyoto%2C%20Japan!5e0!3m2!1sen!2s!4v1635000000000!5m2!1sen!2s"
+                                    allowfullscreen="" loading="lazy">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Osaka -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card region-card h-100 shadow-sm border-0">
+                        <div class="card-body p-4">
+                            <img src="https://images.unsplash.com/photo-1590559899731-a382839e5549?w=800&q=80"
+                                alt="Osaka Dotonbori" class="region-image">
+
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-shop text-warning fs-2 me-3"></i>
+                                <h4 class="fw-bold mb-0">Osaka</h4>
+                            </div>
+                            <span class="badge bg-warning text-dark mb-3">Kansai Region</span>
+                            <p class="text-muted">Known as "Japan's Kitchen," Osaka is a food lover's paradise with
+                                vibrant nightlife, friendly locals, and incredible street food culture.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Dotonbori District</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Osaka Castle</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Kuromon Market</li>
+                            </ul>
+
+                            <!-- Osaka Map -->
+                            <div class="map-container">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d209026.06667250217!2d135.36238195!3d34.6937378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e86b1fdb51b7%3A0x99d0e3e4ee5d2679!2sOsaka%2C%20Japan!5e0!3m2!1sen!2s!4v1635000000000!5m2!1sen!2s"
+                                    allowfullscreen="" loading="lazy">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5 class="fw-bold mb-3">Japan Explorer</h5>
+                    <p class="text-muted">Discover the beauty and wonder of Japan through culture, cuisine, and
+                        breathtaking landscapes.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <h5 class="fw-bold mb-3">Follow Us</h5>
+                    <a href="#" class="text-white me-3"><i class="bi bi-facebook fs-4"></i></a>
+                    <a href="#" class="text-white me-3"><i class="bi bi-instagram fs-4"></i></a>
+                    <a href="#" class="text-white me-3"><i class="bi bi-twitter fs-4"></i></a>
+                    <a href="#" class="text-white"><i class="bi bi-youtube fs-4"></i></a>
+                </div>
+            </div>
+            <hr class="my-4 bg-secondary">
+            <div class="text-center text-muted">
+                <p class="mb-0">&copy; 2025 Japan Explorer. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
