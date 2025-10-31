@@ -24,15 +24,14 @@
 
 .region-card:hover {
     transform: translateY(-5px);
-    transition: transform 0.3s ease;
-}
-
-.food-card {
     transition: all 0.3s ease;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25) !important;
 }
 
 .food-card:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25) !important;
 }
 
 .region-image {
