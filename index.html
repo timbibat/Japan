@@ -5,6 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Japan - Discover the Land of the Rising Sun</title>
+    <link rel="icon"
+        href="https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Flag_of_Japan.svg/1200px-Flag_of_Japan.svg.png"
+        type="image/svg+xml">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
@@ -14,10 +17,12 @@
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg bg-white sticky-top shadow-sm">
+    <nav class="navbar navbar-expand-lg bg-light sticky-top shadow-sm border-bottom border-secondary border-3">
         <div class="container">
-            <a class="navbar-brand fw-bold text-primary" href="#">
-                <span style="font-size: 1.5rem;">🇯🇵</span> Japan Explorer
+            <a class="navbar-brand fw-bold text-primary d-flex align-items-center" href="#">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Flag_of_Japan.svg/1200px-Flag_of_Japan.svg.png"
+                    alt="Japan Flag" width="30" height="20" class="me-2">
+                <span>Japan</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,22 +31,22 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
+                        <a class="nav-link fw-semibold" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
+                        <a class="nav-link fw-semibold" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#regions">Regions</a>
+                        <a class="nav-link fw-semibold" href="#regions">Regions</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#food">Dishes</a>
+                        <a class="nav-link fw-semibold" href="#food">Dishes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#culture">Culture</a>
+                        <a class="nav-link fw-semibold" href="#culture">Culture</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#gallery">Gallery</a>
+                        <a class="nav-link fw-semibold" href="#gallery">Gallery</a>
                     </li>
                 </ul>
             </div>
@@ -54,21 +59,20 @@
             <h1 class="display-1 fw-bold mb-4" style="text-shadow: 2px 2px 8px rgba(0,0,0,0.8);">Welcome to Japan</h1>
             <p class="lead fs-3 mb-5" style="text-shadow: 1px 1px 4px rgba(0,0,0,0.8);">Discover the perfect blend of
                 ancient traditions and modern innovation</p>
-            <a href="#about" class="btn btn-primary btn-lg px-5 py-3">
+            <a href="#about" class="btn btn-danger btn-lg px-5 py-3 shadow-lg rounded-pill">
                 <i class="bi bi-arrow-down me-2"></i>Start Exploring
             </a>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-5 position-relative"
+    <section id="about" class="py-5 position-relative bg-light"
         style="background: linear-gradient(rgba(255,255,255,0.75), rgba(255,255,255,0.75)), url('https://images.contentstack.io/v3/assets/blt06f605a34f1194ff/bltc1564bc44f66a900/675e1262cbd7d6bc5f15c6b0/japan-725347-Header_Mobile.jpg?format=webp&quality=60&width=1440') center/cover no-repeat fixed;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto text-center mb-5">
-                    <h2 class="display-4 fw-bold text-primary mb-4"
-                        style="text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.9);">About Japan</h2>
-                    <p class="lead text-dark fw-semibold" style="text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.9);">
+                    <h2 class="display-4 fw-bold text-primary mb-4">About Japan</h2>
+                    <p class="lead text-dark fw-semibold">
                         Japan is an island nation in East Asia known for its rich history,
                         vibrant culture, cutting-edge technology, and stunning natural landscapes. From the bustling
                         streets of Tokyo to the serene temples of Kyoto, Japan offers a unique blend of the old and the
@@ -79,34 +83,34 @@
             <!-- Quick Facts -->
             <div class="row mb-5">
                 <div class="col-lg-10 mx-auto">
-                    <div class="card shadow-sm border-0">
+                    <div class="card shadow border-secondary border-2">
                         <div class="card-body p-4">
-                            <h3 class="h4 fw-bold text-center mb-4">Quick Facts</h3>
+                            <h3 class="h4 fw-bold text-center mb-4 text-primary">Quick Facts</h3>
                             <div class="row g-4">
                                 <div class="col-md-6 col-lg-3">
                                     <div class="text-center">
-                                        <i class="bi bi-geo-alt-fill text-primary fs-2 mb-2"></i>
+                                        <i class="bi bi-geo-alt-fill text-danger fs-2 mb-2"></i>
                                         <h5 class="fw-bold">Capital</h5>
                                         <p class="text-muted mb-0">Tokyo</p>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-lg-3">
                                     <div class="text-center">
-                                        <i class="bi bi-people-fill text-primary fs-2 mb-2"></i>
+                                        <i class="bi bi-people-fill text-danger fs-2 mb-2"></i>
                                         <h5 class="fw-bold">Population</h5>
                                         <p class="text-muted mb-0">125 million</p>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-lg-3">
                                     <div class="text-center">
-                                        <i class="bi bi-translate text-primary fs-2 mb-2"></i>
+                                        <i class="bi bi-translate text-danger fs-2 mb-2"></i>
                                         <h5 class="fw-bold">Language</h5>
                                         <p class="text-muted mb-0">Japanese</p>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-lg-3">
                                     <div class="text-center">
-                                        <i class="bi bi-cash-coin text-primary fs-2 mb-2"></i>
+                                        <i class="bi bi-cash-coin text-danger fs-2 mb-2"></i>
                                         <h5 class="fw-bold">Currency</h5>
                                         <p class="text-muted mb-0">Yen (¥)</p>
                                     </div>
@@ -120,7 +124,7 @@
             <!-- Key Highlights -->
             <div class="row g-4">
                 <div class="col-lg-4">
-                    <div class="card h-100 border-0 shadow-sm">
+                    <div class="card h-100 border-0 shadow-sm border-top border-danger border-4">
                         <div class="card-body text-center p-4">
                             <i class="bi bi-building text-primary fs-1 mb-3"></i>
                             <h4 class="fw-bold mb-3">Rich Culture & History</h4>
@@ -130,7 +134,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="card h-100 border-0 shadow-sm">
+                    <div class="card h-100 border-0 shadow-sm border-top border-danger border-4">
                         <div class="card-body text-center p-4">
                             <i class="bi bi-cpu text-primary fs-1 mb-3"></i>
                             <h4 class="fw-bold mb-3">Modern Innovation</h4>
@@ -140,7 +144,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="card h-100 border-0 shadow-sm">
+                    <div class="card h-100 border-0 shadow-sm border-top border-danger border-4">
                         <div class="card-body text-center p-4">
                             <i class="bi bi-flower1 text-primary fs-1 mb-3"></i>
                             <h4 class="fw-bold mb-3">Natural Beauty</h4>
@@ -165,16 +169,16 @@
             <div class="row g-4">
                 <!-- Tokyo -->
                 <div class="col-md-6 col-lg-4">
-                    <div class="card region-card h-100 shadow-sm border-0">
+                    <div class="card region-card h-100 shadow border-top border-danger border-4">
                         <div class="card-body p-4">
                             <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=800&q=80"
-                                alt="Tokyo cityscape" class="region-image">
+                                alt="Tokyo cityscape" class="region-image rounded-3 border border-secondary border-2">
 
-                            <div class="d-flex align-items-center mb-3">
-                                <i class="bi bi-buildings text-primary fs-2 me-3"></i>
+                            <div class="d-flex align-items-center mb-3 mt-3">
+                                <i class="bi bi-buildings text-danger fs-2 me-3"></i>
                                 <h4 class="fw-bold mb-0">Tokyo</h4>
                             </div>
-                            <span class="badge bg-primary mb-3">Kanto Region</span>
+                            <span class="badge bg-danger mb-3 rounded-pill px-3 py-2">Kanto Region</span>
                             <p class="text-muted">Japan's bustling capital, a fusion of ultra-modern and traditional.
                                 Experience neon-lit streets, world-class dining, historic temples, and cutting-edge
                                 technology.</p>
@@ -185,7 +189,7 @@
                             </ul>
 
                             <!-- Tokyo Map -->
-                            <div class="map-container">
+                            <div class="map-container rounded-3 border border-2 border-secondary">
                                 <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d207241.42019502868!2d139.55473195!3d35.6828387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x605d1b87f02e57e7%3A0x2e01618b22571b89!2sTokyo%2C%20Japan!5e0!3m2!1sen!2s!4v1635000000000!5m2!1sen!2s"
                                     allowfullscreen="" loading="lazy">
@@ -197,16 +201,16 @@
 
                 <!-- Kyoto -->
                 <div class="col-md-6 col-lg-4">
-                    <div class="card region-card h-100 shadow-sm border-0">
+                    <div class="card region-card h-100 shadow border-top border-success border-4">
                         <div class="card-body p-4">
                             <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=800&q=80"
-                                alt="Kyoto temple" class="region-image">
+                                alt="Kyoto temple" class="region-image rounded-3 border border-secondary border-2">
 
-                            <div class="d-flex align-items-center mb-3">
+                            <div class="d-flex align-items-center mb-3 mt-3">
                                 <i class="bi bi-tree text-success fs-2 me-3"></i>
                                 <h4 class="fw-bold mb-0">Kyoto</h4>
                             </div>
-                            <span class="badge bg-success mb-3">Kansai Region</span>
+                            <span class="badge bg-success mb-3 rounded-pill px-3 py-2">Kansai Region</span>
                             <p class="text-muted">Ancient capital with over 2,000 temples and shrines. Walk through
                                 bamboo groves, traditional geisha districts, and stunning zen gardens.</p>
                             <ul class="list-unstyled">
@@ -216,7 +220,7 @@
                             </ul>
 
                             <!-- Kyoto Map -->
-                            <div class="map-container">
+                            <div class="map-container rounded-3 border border-2 border-secondary">
                                 <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104603.52466745283!2d135.66828705!3d35.0116363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600108ae918b02ef%3A0xb61a446a7678d7f4!2sKyoto%2C%20Japan!5e0!3m2!1sen!2s!4v1635000000000!5m2!1sen!2s"
                                     allowfullscreen="" loading="lazy">
@@ -228,16 +232,16 @@
 
                 <!-- Osaka -->
                 <div class="col-md-6 col-lg-4">
-                    <div class="card region-card h-100 shadow-sm border-0">
+                    <div class="card region-card h-100 shadow border-top border-warning border-4">
                         <div class="card-body p-4">
                             <img src="https://images.unsplash.com/photo-1590559899731-a382839e5549?w=800&q=80"
-                                alt="Osaka Dotonbori" class="region-image">
+                                alt="Osaka Dotonbori" class="region-image rounded-3 border border-secondary border-2">
 
-                            <div class="d-flex align-items-center mb-3">
+                            <div class="d-flex align-items-center mb-3 mt-3">
                                 <i class="bi bi-shop text-warning fs-2 me-3"></i>
                                 <h4 class="fw-bold mb-0">Osaka</h4>
                             </div>
-                            <span class="badge bg-warning text-dark mb-3">Kansai Region</span>
+                            <span class="badge bg-warning text-dark mb-3 rounded-pill px-3 py-2">Kansai Region</span>
                             <p class="text-muted">Known as "Japan's Kitchen," Osaka is a food lover's paradise with
                                 vibrant nightlife, friendly locals, and incredible street food culture.</p>
                             <ul class="list-unstyled">
@@ -247,7 +251,7 @@
                             </ul>
 
                             <!-- Osaka Map -->
-                            <div class="map-container">
+                            <div class="map-container rounded-3 border border-2 border-secondary">
                                 <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d209026.06667250217!2d135.36238195!3d34.6937378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e86b1fdb51b7%3A0x99d0e3e4ee5d2679!2sOsaka%2C%20Japan!5e0!3m2!1sen!2s!4v1635000000000!5m2!1sen!2s"
                                     allowfullscreen="" loading="lazy">
@@ -271,7 +275,7 @@
             <div class="row g-4">
                 <!-- Sushi -->
                 <div class="col-md-6 col-lg-4">
-                    <div class="card food-card h-100 border-0 shadow-sm">
+                    <div class="card food-card h-100 border-0 shadow border-top border-danger border-4">
                         <img src="https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=800&q=80"
                             alt="Sushi and Sashimi" class="card-img-top" style="height: 250px; object-fit: cover;">
                         <div class="card-body text-center p-4">
@@ -279,14 +283,14 @@
                             <h4 class="fw-bold mb-3">Sushi & Sashimi</h4>
                             <p class="text-muted">Fresh, expertly prepared raw fish and rice. From conveyor belt
                                 restaurants to Michelin-starred establishments, sushi is Japan's most iconic dish.</p>
-                            <span class="badge bg-primary">Must Try</span>
+                            <span class="badge bg-danger rounded-pill px-3 py-2">Must Try</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Ramen -->
                 <div class="col-md-6 col-lg-4">
-                    <div class="card food-card h-100 border-0 shadow-sm">
+                    <div class="card food-card h-100 border-0 shadow border-top border-warning border-4">
                         <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=800&q=80"
                             alt="Japanese Ramen" class="card-img-top" style="height: 250px; object-fit: cover;">
                         <div class="card-body text-center p-4">
@@ -294,14 +298,14 @@
                             <h4 class="fw-bold mb-3">Ramen</h4>
                             <p class="text-muted">Hearty noodle soup with rich broth. Regional varieties include
                                 Tonkotsu (pork bone), Miso, Shoyu (soy sauce), and Shio (salt) ramen.</p>
-                            <span class="badge bg-warning text-dark">Popular</span>
+                            <span class="badge bg-warning text-dark rounded-pill px-3 py-2">Popular</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Tempura -->
                 <div class="col-md-6 col-lg-4">
-                    <div class="card food-card h-100 border-0 shadow-sm">
+                    <div class="card food-card h-100 border-0 shadow border-top border-success border-4">
                         <img src="https://delizzious.com/wp-content/uploads/2021/03/vegetable-tempura-3-1-1200x900-cropped.jpg"
                             alt="Tempura" class="card-img-top" style="height: 250px; object-fit: cover;">
                         <div class="card-body text-center p-4">
@@ -309,7 +313,7 @@
                             <h4 class="fw-bold mb-3">Tempura</h4>
                             <p class="text-muted">Lightly battered and deep-fried seafood and vegetables. Crispy,
                                 delicate, and served with dipping sauce or over rice.</p>
-                            <span class="badge bg-success">Traditional</span>
+                            <span class="badge bg-success rounded-pill px-3 py-2">Traditional</span>
                         </div>
                     </div>
                 </div>
@@ -328,14 +332,13 @@
             <div class="row g-4 mb-5">
                 <!-- Tea Ceremony -->
                 <div class="col-lg-6">
-                    <div class="card h-100 border-0 shadow">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="https://images.unsplash.com/photo-1585553616435-2dc0a54e271d?w=800&q=80"
-                                    alt="Japanese Tea Ceremony" class="img-fluid h-100 w-100"
-                                    style="object-fit: cover;">
+                    <div class="card h-100 border-0 shadow border-start border-success border-4">
+                        <div class="row g-0 h-100">
+                            <div class="col-12 col-md-4">
+                                <img src="https://www.sugimotousa.com/asset/5f1208aa97626" alt="Japanese Tea Ceremony"
+                                    class="img-fluid w-100 culture-image">
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-12 col-md-8">
                                 <div class="card-body p-4">
                                     <h4 class="fw-bold mb-3">Tea Ceremony (Sadō)</h4>
                                     <p class="text-muted">A choreographed ritual of preparing and serving matcha green
@@ -353,13 +356,13 @@
 
                 <!-- Kimono -->
                 <div class="col-lg-6">
-                    <div class="card h-100 border-0 shadow">
-                        <div class="row g-0">
-                            <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow border-start border-danger border-4">
+                        <div class="row g-0 h-100">
+                            <div class="col-12 col-md-4">
                                 <img src="https://japaneseonimasks.com/cdn/shop/products/japanese-style-men-bathrobe-gown-dressin_description-32.jpg?v=1640003956&width=533"
-                                    alt="Japanese Kimono" class="img-fluid h-100 w-100" style="object-fit: cover;">
+                                    alt="Japanese Kimono" class="img-fluid w-100 culture-image">
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-12 col-md-8">
                                 <div class="card-body p-4">
                                     <h4 class="fw-bold mb-3">Kimono</h4>
                                     <p class="text-muted">Traditional Japanese garment with beautiful patterns and
@@ -377,14 +380,13 @@
 
                 <!-- Festivals -->
                 <div class="col-lg-6">
-                    <div class="card h-100 border-0 shadow">
-                        <div class="row g-0">
-                            <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow border-start border-warning border-4">
+                        <div class="row g-0 h-100">
+                            <div class="col-12 col-md-4">
                                 <img src="https://www.nippon.com/en/ncommon/contents/japan-data/2431708/2431708.jpg"
-                                    alt="Japanese Festival Matsuri" class="img-fluid h-100 w-100"
-                                    style="object-fit: cover;">
+                                    alt="Japanese Festival Matsuri" class="img-fluid w-100 culture-image">
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-12 col-md-8">
                                 <div class="card-body p-4">
                                     <h4 class="fw-bold mb-3">Matsuri (Festivals)</h4>
                                     <p class="text-muted">Vibrant celebrations throughout the year featuring parades,
@@ -404,14 +406,13 @@
 
                 <!-- Martial Arts -->
                 <div class="col-lg-6">
-                    <div class="card h-100 border-0 shadow">
-                        <div class="row g-0">
-                            <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow border-start border-info border-4">
+                        <div class="row g-0 h-100">
+                            <div class="col-12 col-md-4">
                                 <img src="https://images.unsplash.com/photo-1555597673-b21d5c935865?w=800&q=80"
-                                    alt="Japanese Martial Arts" class="img-fluid h-100 w-100"
-                                    style="object-fit: cover;">
+                                    alt="Japanese Martial Arts" class="img-fluid w-100 culture-image">
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-12 col-md-8">
                                 <div class="card-body p-4">
                                     <h4 class="fw-bold mb-3">Martial Arts</h4>
                                     <p class="text-muted">Ancient combat techniques developed into spiritual and
@@ -430,13 +431,31 @@
         </div>
     </section>
 
+    <!-- Photo Gallery Section -->
+    <section id="gallery" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-4 fw-bold text-primary mb-3">Photo Gallery</h2>
+                <p class="lead text-muted">A visual journey through Japan's beauty</p>
+            </div>
+
+            <!-- Gallery Tabs -->
+            <ul class="nav nav-pills justify-content-center mb-4 gap-2" id="galleryTabs">
+            </ul>
+
+            <!-- Gallery Grid -->
+            <div class="row g-3 justify-content-center" id="galleryGrid">
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
-    <footer class="bg-dark text-white py-4">
+    <footer class="bg-dark text-white py-4 border-top border-danger border-4">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <h5 class="fw-bold mb-3">Japan Explorer</h5>
-                    <p class="text-muted">Discover the beauty and wonder of Japan through culture, cuisine, and
+                    <h5 class="fw-bold mb-3">Japan</h5>
+                    <p class="text-white">Discover the beauty and wonder of Japan through culture, cuisine, and
                         breathtaking landscapes.</p>
                 </div>
                 <div class="col-md-6 text-md-end">
@@ -447,9 +466,9 @@
                     <a href="#" class="text-white"><i class="bi bi-youtube fs-4"></i></a>
                 </div>
             </div>
-            <hr class="my-4 bg-secondary">
+            <hr class="my-4 border-secondary">
             <div class="text-center text-muted">
-                <p class="mb-0">&copy; 2025 Japan Explorer. All rights reserved.</p>
+                <p class="text-white mb-0">&copy; 2025 Japan. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -457,8 +476,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
-
-    <!-- Smooth scrolling -->
     <script>
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -473,6 +490,8 @@
             });
         });
     </script>
+    <script src="assets/gallery.js"></script>
+    <script src="assets/data.js"></script>
 </body>
 
 </html>
